@@ -7,3 +7,16 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
+
+
+password = 'pass123'
+4.times do
+  u = User.create(
+      email: Faker::StarWars.character,
+      password: password,
+      password_confirmation: password,
+      quote: Faker::StarWars.quote,
+  )
+  puts "Created #{u.email}, who says: #{u.quote}."
+
+end
