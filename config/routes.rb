@@ -14,5 +14,5 @@ Rails.application.routes.draw do
       post :close
     end
   end
-  
+
 end
