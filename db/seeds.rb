@@ -12,7 +12,8 @@ puts 'CREATED ADMIN USER: ' << user.email
 password = 'pass123'
 4.times do
   u = User.create(
-      email: Faker::StarWars.character,
+      name: Faker::StarWars.character,
+      email: Faker::StarWars.specie+"@yahoo.com",
       password: password,
       password_confirmation: password,
       quote: Faker::StarWars.quote,
