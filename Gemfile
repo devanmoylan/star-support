@@ -19,6 +19,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'pg'
 gem 'inline_svg'
+gem 'redis'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
