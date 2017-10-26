@@ -16,8 +16,8 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-(function() {
-    $(document).on('click', '.toggle-window', function(e) {
+(function () {
+    $(document).on('click', '.toggle-window', function (e) {
         e.preventDefault();
         var panel = $(this).parent().parent();
         var messages_list = panel.find('.messages-list');
@@ -31,3 +31,4 @@
         }
     });
 })();
+

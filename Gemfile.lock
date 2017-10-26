@@ -58,6 +58,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    binding_of_caller (0.7.3)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -83,6 +85,7 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.2)
     database_cleaner (1.6.1)
+    debug_inspector (0.0.3)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -103,6 +106,9 @@ GEM
     hub (1.12.4)
     i18n (0.9.0)
       concurrent-ruby (~> 1.0)
+    inline_svg (1.2.3)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     interception (0.5)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -269,6 +275,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+  binding_of_caller
   bootstrap-sass
   byebug
   capybara (~> 2.13)
@@ -278,6 +285,7 @@ DEPENDENCIES
   factory_girl_rails
   faker!
   hub
+  inline_svg
   jbuilder (~> 2.5)
   jquery-rails
   launchy

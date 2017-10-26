@@ -1,3 +1,27 @@
 #users-dashboard {
+  a {
+    text-decoration: none;
+  }
 
+  table tr {
+    border-bottom: 1px solid #ddd;
+    transition: 1s;
+  }
+  .thumb-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+  }
+  .user-role {
+    font-size: smaller;
+    font-weight: 100;
+  }
+
+  .thumbnail {
+    padding: 10px 0px;
+  }
+}
+
+.admin-role {
+  color: limegreen;
 }

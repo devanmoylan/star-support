@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   before_action :set_user, only: [:show, :dashboard]
-  before_action :check_user_rights, only: [:dashboard]
+  before_action :check_user_rights, only: [:dashboard, :index, :show]
 
   def index
     @users = User.all

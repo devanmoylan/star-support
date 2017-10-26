@@ -80,3 +80,50 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+
+// Common methods
+
+.page-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 70px;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-white {
+  background-color: #fff;
+  border-color: #dddddd;
+}
+
+.navbar {
+  min-height: 58px !important;
+}
+
+#alert-notice {
+  background-color: #1f96f7;
+  border-color: #1b81e3;
+  color: #ffffff;
+  border-radius: 0px;
+  z-index: 4000;
+  position: absolute;
+  width: 100%;
+  transition: 1s;
+}

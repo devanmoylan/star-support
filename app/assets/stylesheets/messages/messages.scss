@@ -4,21 +4,28 @@
   overflow-x: hidden;
 }
 
+.message-sent, .message-received {
+  position: relative;
+  margin: 5px 20px;
+  padding: 5px 12px;
+  border-radius: 19px;
+}
 
 .message-sent {
-  position: relative;
-  background-color: #D9EDF7;
-  border-color: #BCE8F1;
-  margin: 5px 20px;
-  padding: 10px;
+  color: white;
+  background-color: $blue-color;
+  border-color: $blue-color;
   float: right;
 }
 
-
 .message-received {
-  background-color: #F1F0F0;
-  border-color: #EEEEEE;
-  margin: 5px 20px;
-  padding: 10px;
+  background-color: $gray-light-color;
+  border-color: $gray-light-color;
   float: left;
+}
+
+@media screen and (max-width: 699px) {
+  .message-sent {
+    margin: 5px 35px;
+  }
 }

@@ -1,2 +1,9 @@
-<td><%= link_to user.name, user %></td>
-<td><%= link_to user.email, user %></td>
+<tr>
+  <th>
+    <% if user.admin? %>
+        <%= image_tag("#{ admin_image_helper(user.name) }", class: 'thumb-img') %>
+    <% end %>
+  </th>
+  <th><%= link_to user.name, conversations_path(user_id: user), remote: true, method: :post %></th>
+  <th class="user-role text-right <%= "admin-role" if user.admin? %>"><%= user.admin? ? "ACTIVE SUPPORT" : "HUMAN" %></th>
+</tr>
