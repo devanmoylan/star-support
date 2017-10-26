@@ -88,4 +88,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # For ActionCable
+  config.web_socket_server_url = "wss://star-support.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://star-support.herokuapp.com', 'http://star-support.herokuapp.com']
 end

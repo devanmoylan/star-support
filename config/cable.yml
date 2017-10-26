@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://redistogo:dc90307336db137562b232ab8e5420ff@grouper.redistogo.com:11130/
   channel_prefix: star-support_production
