@@ -6,7 +6,7 @@
     <p>PRESENTS</p>
     <h3>STAR CHAT</h3>
     <br>
-    <%= link_to "CHAT NOW", new_user_registration_path, class: 'btn btn-dark btn-lg' %>
+    <%= link_to "CHAT NOW", new_user_registration_path, class: 'btn btn-dark btn-lg', method: :get %>
   </div>
 </header>
 
@@ -63,7 +63,7 @@
           <%= render partial: 'visitors/hobby', collection: hobbies %>
         </div>
         <!-- /.row (nested) -->
-        <%= link_to "CHAT NOW", new_user_registration_path, class: 'btn btn-dark btn-lg' %>
+        <%= link_to "CHAT NOW", new_user_registration_path, class: 'btn btn-dark btn-lg', method: :get %>
       </div>
       <!-- /.col-lg-10 -->
     </div>
